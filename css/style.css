@@ -21,9 +21,10 @@ version: 1.0.0
 /*----------- Gerneral -------------*/
 
 * {
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
-    font-family: var(--main-font);
+    font-family: var(--secondary-font);
+    /* font-family: var(--main-font); */
     /*  font-size: 1.2vw; */
     margin: 0;
     padding: 0;
@@ -85,10 +86,48 @@ p {
 .small {
     font-size: 0.8rem;
 }
-/* --------------------------------------------------------------- */
+/* ---------------------------Responsibility------------------------- */
+@media screen and (max-width: 630px) {
+    .nav{
+        width: 100% !important;
+    }
+    .img-cont {
+        grid-row: 1 / 2 !important;
+        grid-column: 1 / 3;
+        width: 50vw !important;
+    }
+    .nav .button{
+        display: none;
+    }
+    h1 {
+        font-size: 50px;
+    }
 
+    .hero{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro{
+        height: fit-content !important;
+    }
+    .intro_center{
+        height: 50%;
+        align-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .intro_center .button{
+        align-self: center;
+    }
+
+  }
+
+
+
+/* ------------------------------------------------------------------ */
 h1{
-    font-family: var(--secondary-font);
+    font-family: var(--main-font);
 }
 .nav{
     display: grid;
