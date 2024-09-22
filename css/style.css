@@ -31,6 +31,10 @@ version: 1.0.0
     color: var(--main-text-color);
     scroll-behavior: smooth;
 }
+::selection {
+    background: var(--main-color);
+    color: red;
+  }
 body {
     line-height: 1.6;
 }
@@ -44,12 +48,15 @@ h1, h2, h3{
 }
 h1 {
     /* font-size: 2.986rem; */
-    font-size: 5vw;
+    font-size: 50px !important;
+    position: sticky;
+    top: 4vh;
+    z-index: 999;
 }
-
 h2 {
     /* font-size: 2.488rem; */
     font-size: 4vw;
+    z-index: 999;
 }
 
 h3 {
@@ -118,11 +125,21 @@ p {
 
   }
 
-
-
-/* ------------------------------------------------------------------ */
+/* ----------------------------Animations---------------------------- */
+@keyframes progressBar {
+    from { width: 0; }
+  }
+/* ------------------------------------------------------------------- */
 h1{
     font-family: var(--main-font);
+}
+img{
+    filter: grayscale(1);
+}
+img:hover{
+    filter: none;
+    transition: all 1s;
+
 }
 .nav{
     display: grid;
@@ -149,6 +166,7 @@ nav li{
 nav li:hover{
     color: var(--secondary-color);
     border-bottom: var(--secondary-color) solid 2px;
+    transition: all 0.5s;
 }
 nav a{
     text-decoration: none;
@@ -180,19 +198,24 @@ nav a{
 .img-cont{
     grid-row: 2/3;
     width: 20vw;
-}
-.img-cont img{
-    border: 1vw solid var(--secondary-color);
+    border: 4px solid var(--main-text-color);
     border-radius: 50%;
 }
+.img-cont img{
+    border-radius: inherit;
+}
 .button{
-    background-color: var(--secondary-color);
     width: fit-content;
     text-decoration: none;
     color: var(--main-text-color);
-    border: var(--secondary-color) 0.1vw solid;
+    border: var(--secondary-color) 2px solid;
     padding: 1vh 1.5vw;
     border-radius: 30px;
+}
+.button:hover{
+    color: #000;
+    background-color: #bababa;
+    transition: all 0.5s;
 }
 .intro{
     grid-row: 2/3;
@@ -209,10 +232,20 @@ nav a{
 .img-cont img{
     width: 100%;
     height: auto;
+    background-color: #000;
 }
 .arrow{
     /* position: absolute; */
     text-align: center;
+}
+.arrow-down :hover{
+    transform: translate3d(0, 30%, 0);
+    transition: all 0.5s;
+    
+}
+.arrow-up :hover{
+    transform: translate3d(0, -30%, 0);
+    transition: all 0.5s;
 }
 .arrow-up{
     margin-top: 6vh;
@@ -276,6 +309,10 @@ nav a{
     row-gap: 20px;
     column-gap: 20px;
     list-style: none;
+}
+
+li:hover .child{
+    animation: progressBar 1s;
 }
 .technical{
     grid-template-rows: 1fr 1fr 1fr;
@@ -503,6 +540,14 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     width: 16vw;
     text-align: center;
+    /* padding: 20px; */
+}
+.links  li:hover{
+    font-size: 36px;
+    padding: 0px;
+    border: var(--secondary-text-color) solid 2px;
+    border-radius: 16px;
+    transition: all 0.3s;   
 }
 .last-ul{
     display: flex;
