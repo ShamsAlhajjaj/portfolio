@@ -89,17 +89,64 @@ p {
     font-size: 0.8rem;
 }
 /* ---------------------------Responsibility------------------------- */
-@media screen and (max-width: 630px) {
-    .nav{
-        width: 100% !important;
+@media screen and (max-width: 769px) {
+    .container{
+        display: flex !important;
+        flex-direction: column;
+    }
+    html .hero, .about, .skills, .projects, .feedbacks, .footer{
+        width: 100vw !important;
+        height: auto;
     }
     .img-cont {
         grid-row: 1 / 2 !important;
         grid-column: 1 / 3;
         width: 50vw !important;
     }
-    .nav .button{
+    .nav .button, .arrow{
         display: none;
+    }
+    .about-p{
+        /* height: 40vh; */
+        /* overflow: scroll; */
+    }
+    .about-list{
+        margin-top: 50px;
+        display: flex !important;
+        /* overflow: scroll; */
+        flex-wrap: wrap;
+    }
+    .skills-list{
+        display: flex !important;
+        flex-direction: column;
+    }
+    .projects-container{
+        display: flex !important;
+        overflow: scroll;
+        height: auto !important;
+    }
+    .parent1{
+        height: 80vh !important;
+    }
+    .feedback{
+        width: 100vw;
+    }
+    .footer{
+        height: 30vh;
+    }
+    .back-to-top-btn{
+        display: none;
+    }
+    .links{
+        display: flex !important;
+    }
+    .links a{
+        margin: 0 10px;
+    }
+    .links-container::after, .links-container::before{
+        display: none !important;
+        width: fit-content !important;
+        text-align: center;
     }
     h1 {
         font-size: 50px;
@@ -122,9 +169,17 @@ p {
     .intro_center .button{
         align-self: center;
     }
+    .divider{
+        display: block !important;
+        border-bottom: #bababa 1px solid;
+    }
 
   }
-
+  @media screen and (max-width: 950px) {
+    nav{
+        display: none !important;
+    }
+}
 /* ----------------------------Animations---------------------------- */
 @keyframes progressBar {
     from { width: 0; }
@@ -508,6 +563,9 @@ body{
 .major{
     font-size: small;
 }
+.divider{
+    display: none;
+}
 .footer{
     background: var(--main-background);
 }
@@ -538,7 +596,7 @@ body{
     display: grid;
     list-style: none;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 16vw;
+    width: fit-content;
     text-align: center;
     /* padding: 20px; */
 }
