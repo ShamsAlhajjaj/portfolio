@@ -18,7 +18,7 @@
             <a href="#about"><li>About</li></a>
             <a href="#skills"><li>Skills</li></a>
             <a href="#projects"><li>Projects</li></a>
-            <a href="#feedbacks"><li>Feedbacks</li></a>
+            <a href="#testimonials"><li>Testimonials</li></a>
             <a href="#footer"><li>Contact</li></a>
         </ul>        
     </nav>
@@ -35,11 +35,17 @@
                             <a href="assets/SHAMS AD-DIN AL-HAJJAJ - Resume.pdf" class="button" download>Download CV</a>
                     </div>
                 </div>
-                <a href="#about" class="arrow arrow-down arrow-down-1"><img src="assets/down-arrow-white.png" alt=""></a>
+                <div class="arrow arrow-down arrow-down-1">
+                    <a href="#about" class=""><img src="assets/down-arrow-white.png" alt=""></a>
+                </div>
             </div>        
         <div class="about secondary-text-color" id="about">
             <a href="#hero" class=" arrow arrow-up1 arrow-up"><img src="assets/up-arrow-white.png" alt=""></a>
-            <h1 class="section-header">About</h1>
+            <div class="bg-container">
+                <h1 class="section-header">About</h1>
+                <div class="bg bg-about">About</div>
+            </div>
+            
             <div class="content">
                 <p class="about-p">
                     I am a passionate Computer Engineering graduate with a focus on web development and a commitment to continuous growth. Currently undergoing training in web development at Orange Jordan’s Programming Academy, I have a strong foundation in HTML, CSS, JavaScript, and PHP. My experience as a Customer Service Agent has honed my interpersonal and problem-solving skills, making me an effective communicator and team player.
@@ -58,10 +64,14 @@
         </div>
         <div class="skills main-text-color" id="skills">
             <a href="#about" class=" arrow arrow-up2 arrow-up"><img src="assets/up-arrow-white.png" alt=""></a>
-            <h1 class="section-header">Skills</h1>
+            <div class="bg-container">
+                <h1 class="section-header">Skills</h1>
+                <div class="bg bg-skills">Skills</div>
+            </div>
             <ul class="skills-list langs">
                 <li>
-                    <span class="bold">Arabic</span> 
+                    <i class="fa-solid fa-language"></i>
+                        <span class="bold">Arabic</span> 
                     <div class="progress-bar">
                         <div class="parent">
                             <div class="child" style="width: 100%;" ></div>
@@ -70,6 +80,7 @@
                     </div>  
                 </li>
                 <li>
+                    <i class="fa-solid fa-language"></i>
                     <span class="bold">English</span> 
                     <div class="progress-bar">
                         <div class="parent">
@@ -81,7 +92,7 @@
             </ul>
             <ul class="skills-list technical">
                 <li>
-                    <span class="bold">GitHub</span> 
+                    <i class="fa-brands fa-github"></i><span class="bold">GitHub</span>  
                     <div class="progress-bar">
                         <div class="parent">
                             <div class="child" style="width: 90%;" ></div>
@@ -90,7 +101,7 @@
                     </div>  
                 </li>
                 <li>
-                    <span class="bold">HTML</span> 
+                    <i class="fa-brands fa-html5"></i><span class="bold">HTML</span> 
                     <div class="progress-bar">
                         <div class="parent">
                             <div class="child" style="width: 95%"></div>
@@ -99,7 +110,7 @@
                     </div>  
                 </li>
                 <li>
-                    <span class="bold">CSS</span> 
+                    <i class="fa-brands fa-css3-alt"></i><span class="bold">CSS</span> 
                     <div class="progress-bar">
                         <div class="parent">
                             <div class="child" style="width: 85%"></div>
@@ -108,7 +119,7 @@
                     </div>  
                 </li>
                 <li>
-                    <span class="bold">Bootstrap</span> 
+                    <i class="fa-brands fa-bootstrap"></i><span class="bold">Bootstrap</span> 
                     <div class="progress-bar">
                         <div class="parent">
                             <div class="child" style="width: 70%"></div>
@@ -117,7 +128,7 @@
                     </div>  
                 </li>
                 <li>
-                    <span class="bold">JavaScript</span> 
+                    <i class="fa-brands fa-js"></i><span class="bold">JavaScript</span> 
                     <div class="progress-bar">
                         <div class="parent">
                             <div class="child" style="width: 85%"></div>
@@ -126,7 +137,7 @@
                     </div>  
                 </li>
                 <li>
-                    <span class="bold">Laravel</span> 
+                    <i class="fa-brands fa-laravel"></i><span class="bold">Laravel</span> 
                     <div class="progress-bar">
                         <div class="parent">
                             <div class="child" style="width: 70%"></div>
@@ -139,7 +150,10 @@
         </div>
         <div class="projects secondary-text-color" id="projects">
             <a href="#skills" class=" arrow arrow-up3 arrow-up"><img src="assets/up-arrow-white.png" alt=""></a>
-            <h1 class="section-header">Projects</h1>
+            <div class="bg-container">
+                <h1 class="section-header">Projects</h1>
+                <div class="bg bg-projects">Projects</div>
+            </div>
             <div class="projects-container">
                 <div class="card card1">
                     <img src="assets/Feane-resturant.png" alt="">
@@ -155,11 +169,10 @@
                 <div class="card card2">
                     <img src="assets/airbnb-statistics.jpg" alt="">
                     <div class="card-content">
-                        <h4 class="bold">Airbnb Replica</h4>
+                        <h4 class="bold">Airbnb Website Clone</h4>
                         <h5>Technologies: HTML, CSS</h5>
                         <p>
-                            This project involved replicating a restaurant website design using only HTML and CSS. It helped me enhance my <span class="bold">Front-End Development</span> skills, focusing on responsive layouts and design accuracy.
-                        </p>
+                            This project is a clone of the Airbnb website built entirely with HTML and CSS. It focuses on accurately replicating the visual design and layout of the original site, showcasing my attention to detail and design consistency.                        </p>
                     </div>
                     <a href="https://github.com/ShamsAlhajjaj/airbnb-replica" class="button">Show code</a>
                 </div>
@@ -169,17 +182,19 @@
                         <h4 class="bold">Portfolio</h4>
                         <h5>Technologies: HTML, CSS</h5>
                         <p>
-                            This project involved replicating a restaurant website design using only HTML and CSS. It helped me enhance my <span class="bold">Front-End Development</span> skills, focusing on responsive layouts and design accuracy.
-                        </p>
+                            This is my personal portfolio website, created using HTML and CSS to showcase my skills, projects. It features a clean, professional design with a focus on user-friendly navigation.                        </p>
                     </div>
                     <a href="" class="button">Show review</a>
                 </div>
             </div>
-            <a href="#feedbacks" class="arrow arrow-down arrow4"><img src="assets/down-arrow-white.png" alt=""></a>
+            <a href="#testimonials" class="arrow arrow-down arrow4"><img src="assets/down-arrow-white.png" alt=""></a>
         </div>
-        <div class="feedbacks main-text-color" id="feedbacks">
+        <div class="feedbacks main-text-color" id="testimonials">
             <a href="#projects" class=" arrow arrow-up4 arrow-up"><img src="assets/up-arrow-white.png" alt=""></a>
-            <h1 class="section-header">Feedbacks</h1>
+            <div class="bg-container">
+                <h1 class="section-header">Testimonials</h1>
+                <div class="bg bg-feedbacks">Testimonials</div>
+            </div>
             <div class="parent1">
                 <div id="element1">
                     <div class="feed-container feed1" id="feed1">
@@ -197,19 +212,19 @@
                 <div>
                 </div>
         </div>
-        <div class="divider"></div>
+        <!-- <div class="divider"></div> -->
         <footer id="footer" class="footer">
             <a href="#" class="button back-to-top-btn">Back to Top</i></a>
             <div class="links-container">
                 <ul class="links">
                     <a href="https://www.linkedin.com/in/shams-alhajjaj/"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
                     <a href="https://github.com/ShamsAlhajjaj"><li><i class="fa-brands fa-github"></i></li></a>
-                    <a href="mailto:alhajjaj0shams@gmail.com"><li><i class="fa-solid fa-at"></i></li></a>
+                    <a href="mailto:alhajjaj0shams@gmail.com"><li><i class="fa-solid fa-envelope"></i></li></a>
                 </ul>
             </div>
             <ul class="last-ul">
-                <li><span class="bold">Email:</span> alhajjaj0shams@gmail.com</li>
-                <li><span class="bold">Phone:</span> +962789619688</li>
+                <li><i class="fa-solid fa-at"></i> Email: alhajjaj0shams@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i> Phone: +962789619688</li>
             </ul>
         </footer>
     </div>
